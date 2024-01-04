@@ -2,6 +2,7 @@ package net.william.enderupdate;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.william.enderupdate.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class EnderUpdate implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Im working");
+		ModItems.registerModItems();
 	}
 }
