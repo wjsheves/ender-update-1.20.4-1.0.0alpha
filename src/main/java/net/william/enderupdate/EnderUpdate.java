@@ -11,6 +11,6 @@ public class EnderUpdate implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello Im working");
 	}
 }
