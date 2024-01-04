@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enderupdate",
+	"version": "${version}",
+	"name": "Ender Update",
+	"description": "Dose the END always seem boring after you have an elitra well in this mod that changes.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/enderupdate/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.william.enderupdate.EnderUpdate"
+		],
+		"client": [
+			"net.william.enderupdate.EnderUpdateClient"
+		],
+		"fabric-datagen": [
+			"net.william.enderupdate.EnderUpdateDataGenerator"
+		]
+	},
+	"mixins": [
+		"enderupdate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
